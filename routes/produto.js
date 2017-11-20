@@ -10,7 +10,7 @@ router.get('/grao', async (req, res, next) => {
   res.render('../views/produto_grao', {
     title: 'Consulta de Pessoas',
     nome: req.user.nome_completo,
-    pessoas: result.rowCount > 0 ? result.rows : null,
+    produto: result.rowCount > 0 ? result.rows : null,
     nome:(req.user ?req.user.nome_completo : '')
   })
 

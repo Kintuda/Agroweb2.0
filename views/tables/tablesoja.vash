@@ -10,7 +10,7 @@
       </tr>
   </thead>
   <tbody>
-    @model.pessoas.forEach(function(item){
+    @model.produto.forEach(function(item){
     <tr>
       <td>@item.produtoid</td>
       <td>@item.produtonome</td>
