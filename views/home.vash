@@ -14,7 +14,7 @@
 						<h1 class="title">Agroweb.</h1>
                     <h4>Agroweb é uma plataforma que veio para auxiliar o agronegócio, com intuito de agilizar, intermediar, facilitar à compra e venda de insumos agrícolas. Trazendo as melhores ofertas do mercado para seus usuários, com total segurança e responsabilidade.</h4>
 	                    <br />
-	                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-info"> Saiba mais
+	                    <a href="/about" class="btn btn-info"> Saiba mais
 						</a>
 					</div>
                 </div>
@@ -25,7 +25,7 @@
 		    	<div class="section text-center section-landing">
 	                <div class="row">
 	                    <div class="col-md-8 col-md-offset-2">
-	                        <h2 class="title">Notícias em destaque</h2>
+	                        <h2 class="title">informações em destaque</h2>
 
 	                        <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.</h5>
 	                    </div>
