@@ -13,7 +13,7 @@ router.use(function(req, res, next) {
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   res.render('users/perfil',{nome:(req.user ?req.user.nome_completo : ''),
-  user:req.body,
+  user:req.user,
   nome_completo:(req.user ?req.user.nome_completo : '')});
 });
 

@@ -23,7 +23,10 @@ module.exports = function () {
               username: first.email,
               data_cadastro: first.data_cadastro,
               ativo: first.ativo,
-              nome_completo: first.nome_completo
+              nome_completo: first.nome_completo,
+              email:first.email,
+              fone:first.fone
+
             })
           } else {
             cb(null, false)
