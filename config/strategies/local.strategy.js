@@ -24,13 +24,8 @@ module.exports = function () {
               data_cadastro: first.data_cadastro,
               ativo: first.ativo,
               nome_completo: first.nome_completo,
-<<<<<<< HEAD
               email:first.email,
-              fone:first.fone
-
-=======
-              email:first.email
->>>>>>> 32e770f73116e48480dda1205449ed8643a6a207
+              fone:first.fone,
             })
           } else {
             cb(null, false)
