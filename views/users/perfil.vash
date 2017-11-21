@@ -24,6 +24,7 @@
 													<p>Aperte o botão para editar seu perfil. </p>
 													<p>@model.nome_completo</p>
 													<p>@model.user.nome_completo</p>
+													<p>@model.user.email<p/>
 	                </div>
 
 
