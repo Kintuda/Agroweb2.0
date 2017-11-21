@@ -11,45 +11,29 @@ router.use(function(req, res, next) {
   next()
 })
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/', async function(req, res, next) {
+  var result = await db.query('SELECT * FROM usuarios where id=$1',[req.user.id])
   res.render('users/perfil',{nome:(req.user ?req.user.nome_completo : ''),
-  user:req.user,
+  user:result.rowCount > 0 ? result.rows : null,
   nome_completo:(req.user ?req.user.nome_completo : '')});
 });
-router.get('/cadastro/:id?', async (req, res, next) => {
-  var pessoa = {}
-
-  if (req.params.id && req.params.id > 0) {
-    var result = await db.query('SELECT * FROM usuarios WHERE id = $1', [req.params.id])
-
-    if (result.rowCount > 0) {
-      pessoa = result.rows[0]
-    }
-  }
-
-  res.render('../views/pessoas/cadastro', {
-    title: 'Cadastro de Pessoa',
-    nome: req.user.nome_completo,
-    pessoa: pessoa
-  })
+router.get('/update', async (req, res, next) => {
+  res.render('users/perfilupdate',{
+    user:req.user,
+    nome_completo:(req.user ?req.user.nome_completo : '')
+  });
 })
-
-router.post('/cadastro/:id?', async (req, res, next) => {
-  var pessoa = req.body
+router.post('/update', async (req, res, next) => {
+  var pessoa = req.user
+  var teste = req.body
   var params = []
 
   var sql = ''
-
   if (pessoa.id && pessoa.id > 0) {
     sql = `
-    UPDATE usuarios SET nome = $1, telefone = $2, cpf = $3 WHERE id = $4
+    UPDATE usuarios SET nome_completo = $1, fone = $2, cpf = $3 WHERE id = $4
     `
-    params = [pessoa.nome, pessoa.telefone, pessoa.cpf, pessoa.id]
-  } else {
-    sql = `
-    INSERT INTO usuarios (nome_completo, fone, cpf) VALUES ($1, $2, $3)
-    `
-    params = [pessoa.nome, pessoa.telefone, pessoa.cpf]
+    params = [teste.nome_completo,teste.fone,teste.cpf, pessoa.id]
   }
 
   var result = await db.query(sql, params)
@@ -58,10 +42,9 @@ router.post('/cadastro/:id?', async (req, res, next) => {
     return res.redirect('/perfil/')
   }
 
-  return res.render('../views/pessoas/cadastro', {
-    title: 'Cadastro de Pessoa',
-    nome: 'Ocorreu algum erro',
-    pessoa: pessoa
+  return res.render('../views/users/perfilupdate', {
+    error: 'Ocorreu algum erro'
   })
 })
+
 module.exports = router;

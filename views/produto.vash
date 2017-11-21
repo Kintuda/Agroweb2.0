@@ -37,12 +37,22 @@
 													</a>
 	 				             </li>
 											 <li class="active">
-	 				                <a href="/produto/ferramentas">
-	 													Ferramentas
+	 				                <a href="/produto/maquinas">
+	 													Máquinas
 													</a>
 	 				             </li>
+											 @if(model.nome!=''){
+											 <li>
+												 <a href="/produto/cadastro">
+													 Adicionar produto
+												 </a>
+											</li>
+											}
 										 </ul>
-
+										 <br>
+										 <br>
+										 <br>
+										 	
 							</div>
 							<br>
 							<br>

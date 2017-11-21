@@ -1,188 +1,185 @@
-
 <!doctype html>
 <html lang="en">
+
 <head>
 	@html.include('/partials/header')
 </head>
+
 <body class="landing-page">
 	@html.include('/partials/nav')
-    <div class="wrapper">
-        <div class="header header-filter" style="background-image: url('/img/pexels-photo-355312.jpeg');">
-            <div class="container">
-                <div class="row">
+	<div class="wrapper">
+		<div class="header header-filter" style="background-image: url('/img/pexels-photo-355312.jpeg');">
+			<div class="container">
+				<div class="row">
 					<div class="col-md-6">
 						<h1 class="title">Agroweb.</h1>
-                    <h4>Agroweb é uma plataforma que veio para auxiliar o agronegócio, com intuito de agilizar, intermediar, facilitar à compra e venda de insumos agrícolas. Trazendo as melhores ofertas do mercado para seus usuários, com total segurança e responsabilidade.</h4>
-	                    <br />
-	                    <a href="/about" class="btn btn-info"> Saiba mais
+						<h4>Agroweb é uma plataforma que veio para auxiliar o agronegócio, com intuito de agilizar, intermediar, facilitar à compra e venda de insumos agrícolas. Trazendo as melhores ofertas do mercado para seus usuários, com total segurança e responsabilidade.</h4>
+						<br />
+						<a href="/about" class="btn btn-info"> Saiba mais
 						</a>
 					</div>
-                </div>
-            </div>
-        </div>
+				</div>
+			</div>
+		</div>
 		<div class="main main-raised">
 			<div class="container">
-		    	<div class="section text-center section-landing">
-	                <div class="row">
-	                    <div class="col-md-8 col-md-offset-2">
-	                        <h2 class="title">informações em destaque</h2>
+				<div class="section text-center section-landing">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<h2 class="title">informações em destaque</h2>
 
-	                        <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.</h5>
-	                    </div>
-	                </div>
+							<h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.</h5>
+						</div>
+					</div>
 
 					<div class="features">
 						<div class="row">
-		                    <div class="col-md-4">
+							<div class="col-md-4">
 								<div class="info">
 									<div class="icon icon-primary">
 										<i class="material-icons">attach_money</i>
 									</div>
 									<h4 class="info-title">Preço do dolar</h4>
-									<p class="results">
-
-
-									</p>
+									<h4><a href="https://mercadocotacao.com/dolar-hoje/" id="USD" title="Cotação do Dólar Americano Hoje" name="mercado_cotacao">Dólar Hoje</a><script async src="https://mercadocotacao.com/money/mercadocotacao.js"></script>
+									<a href="https://mercadocotacao.com/euro-hoje/" id="EUR" title="Cotação do Euro Hoje" name="mercado_cotacao">Euro Hoje</a><script async src="https://mercadocotacao.com/money/mercadocotacao.js"></script>
+									</h4>
 								</div>
-		                    </div>
-		                    <div class="col-md-4">
+							</div>
+							<div class="col-md-4">
 								<div class="info">
 									<div class="icon icon-success">
 										<i class="material-icons">insert_chart</i>
 									</div>
-									<h4 class="info-title">Notícias</h4>
-									<p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+									<h4 class="info-title">Notícia em destaque</h4>
+									<p><!-- Widgets NotÃ­cias AgrÃ­colas - www.noticiasagricolas.com.br/widgets -->
+<script type="text/javascript" src="http://www.noticiasagricolas.com.br/widget/noticias.js.php?subsecao=2,3,6,7,8,10,64,80,85,146,5,4,11,12,156,40,60,13,97,14,95,15,1,155,84,28,149,26,69,90,62,27,92,148,154&largura=auto&altura=250px&fonte=Arial%2C%20Helvetica%2C%20sans-serif&tamanho=10pt&cortexto=333333&corlink=006666&qtd=15&output=js"></script></p>
 								</div>
-		                    </div>
-		                    <div class="col-md-4">
+							</div>
+							<div class="col-md-4">
 								<div class="info">
 									<div class="icon icon-danger">
 										<i class="material-icons">cloud_circle</i>
 									</div>
 									<h4 class="info-title">Clima</h4>
-									<p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+									<p><div id="cont_445e1bcc57bbad1f1c20e7a6239b0029"><script type="text/javascript" async src="https://www.tempo.com/wid_loader/445e1bcc57bbad1f1c20e7a6239b0029"></script></div></p>
 								</div>
-		                    </div>
-		                </div>
+							</div>
+						</div>
 					</div>
-	            </div>
+				</div>
 
-	        	<div class="section text-center">
-	                <h2 class="title">Membros da equipe</h2>
+				<div class="section text-center">
+					<h2 class="title">Membros da equipe</h2>
 
 					<div class="team">
 						<div class="row">
 							<div class="col-md-4">
-			                    <div class="team-player">
-			                        <img src="/img/user.png" alt="Thumbnail Image" class="img-raised img-circle">
-			                        <h4 class="title">Thiago <br />
+								<div class="team-player">
+									<img src="/img/user.png" alt="Thumbnail Image" class="img-raised img-circle">
+									<h4 class="title">Thiago <br/>
 										<small class="text-muted">Fundador/DBA</small>
 									</h4>
-			                        <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+									<p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
 									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
 									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-instagram"></i></a>
-									<a href="#pablo" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
-			                    </div>
-			                </div>
-											<div class="col-md-4">
-							                    <div class="team-player">
-							                        <img src="/img/user.png" alt="Thumbnail Image" class="img-raised img-circle">
-							                        <h4 class="title">Marcio <br />
+									<a href="https://www.facebook.com/" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="team-player">
+									<img src="/img/user.png" alt="Thumbnail Image" class="img-raised img-circle">
+									<h4 class="title">Marcio <br/>
 														<small class="text-muted">Fundador/Desenvolvedor</small>
 													</h4>
-							                        <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
-													<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
-													<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-instagram"></i></a>
-													<a href="#pablo" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
-							                    </div>
-							                </div>
-											<div class="col-md-4">
-							                    <div class="team-player">
-							                        <img src="/img/user.png" alt="Thumbnail Image" class="img-raised img-circle">
-							                        <h4 class="title">Ricardo <br />
+									<p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
+									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-instagram"></i></a>
+									<a href="https://www.facebook.com/" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="team-player">
+									<img src="/img/user.png" alt="Thumbnail Image" class="img-raised img-circle">
+									<h4 class="title">Ricardo <br/>
 														<small class="text-muted">Fundador/DBA</small>
 													</h4>
-							                        <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
-													<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
-													<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-instagram"></i></a>
-													<a href="#pablo" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
-							                    </div>
-							                </div>
-			                <div class="col-md-4">
-			                    <div class="team-player">
-			                        <img src="/img/user.png" alt="Thumbnail Image" class="img-raised img-circle" >
-			                        <h4 class="title">Hugo<br />
-										<small class="text-muted">Desenvolvedor</small>
-									</h4>
-			                        <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+									<p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
 									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
-									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-linkedin"></i></a>
-			                    </div>
-			                </div>
-			                <div class="col-md-4">
-			                    <div class="team-player">
-			                        <img src="/img/user.png" alt="Thumbnail Image" class="img-raised img-circle">
-			                        <h4 class="title">Kin<br/>
+									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-instagram"></i></a>
+									<a href="https://www.facebook.com/" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="team-player">
+									<img src="/img/user.png" alt="Thumbnail Image" class="img-raised img-circle">
+									<h4 class="title">Hugo<br/>
 										<small class="text-muted">Desenvolvedor</small>
 									</h4>
-			                        <p>You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+									<p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
+									<a href="https://br.linkedin.com/" class="btn btn-simple btn-just-icon"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="team-player">
+									<img src="/img/user.png" alt="Thumbnail Image" class="img-raised img-circle">
+									<h4 class="title">Kin<br/>
+										<small class="text-muted">Desenvolvedor</small>
+									</h4>
+									<p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
 									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-google-plus"></i></a>
 									<a href="https://br.linkedin.com/"><i class="fa fa-linkedin"></i></a>
-			                    </div>
-			                </div>
+								</div>
+							</div>
 						</div>
 					</div>
 
-	            </div>
+				</div>
 
 
-	        	<div class="section landing-section">
-	                <div class="row">
-	                    <div class="col-md-8 col-md-offset-2">
-	                        <h2 class="text-center title">Contato</h2>
+				<div class="section landing-section">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<h2 class="text-center title">Contato</h2>
 							<h4 class="text-center description">Deixe suas reclamações ou dúvidos junto com suas informações de contato.</h4>
-	                        <form class="contact-form" method="post" action="/" >
-	                            <div class="row">
-	                                <div class="col-md-6">
+							<form class="contact-form" method="post" action="/">
+								<div class="row">
+									<div class="col-md-6">
 										<div class="form-group label-floating">
 											<label class="control-label">Seu nome</label>
 											<input type="text" name="nome" id="nome" class="form-control">
 										</div>
-	                                </div>
-	                                <div class="col-md-6">
+									</div>
+									<div class="col-md-6">
 										<div class="form-group label-floating">
 											<label class="control-label">Seu Email</label>
 											<input type="email" id="email" name="email" class="form-control">
 										</div>
-	                                </div>
-	                            </div>
+									</div>
+								</div>
 
 								<div class="form-group label-floating">
 									<label class="control-label">Sua mensagem</label>
 									<textarea class="form-control" name="mensagem" id="mensagem" rows="4"></textarea>
 								</div>
 
-	                            <div class="row">
-	                                <div class="col-md-4 col-md-offset-4 text-center">
-	                                    <button class="btn btn-primary btn-raised" type="submit" >
+								<div class="row">
+									<div class="col-md-4 col-md-offset-4 text-center">
+										<button class="btn btn-primary btn-raised" type="submit">
 											Envie
 										</button>
-	                                </div>
-	                            </div>
-	                        </form>
-	                    </div>
-	                </div>
-
-	            </div>
-	        </div>
-
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-
 	</div>
 </body>
 <footer>
-
-
 </footer>
 @html.include('/partials/script')
+
 </html>

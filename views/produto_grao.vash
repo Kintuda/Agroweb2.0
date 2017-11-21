@@ -1,53 +1,53 @@
-
 <head>
 	@html.include('/partials/header')
 </head>
+
 <body class="profile-page">
-  @html.include('/partials/nav')
-    <div class="wrapper">
+	@html.include('/partials/nav')
+	<div class="wrapper">
 		<div class="header header-filter" style="background-image: url('/img/pexels-photo-355312.jpeg');"></div>
 
 		<div class="main main-raised">
 			<div class="profile-content">
-	            <div class="container">
-	                <div class="row">
-	                    <div class="profile">
-	                        <div class="avatar">
-	                            <img src="/img/151117-grains-stock.jpg" alt="Circle Image" class="img-rounded img-responsive">
-	                        </div>
-	                        <div class="name">
-	                            <h3 class="title">@model.tipo</h3>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="description text-center">
-                        <p>An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
-	                </div>
+				<div class="container">
+					<div class="row">
+						<div class="profile">
+							<div class="avatar">
+								<img src="/img/151117-grains-stock.jpg" alt="Circle Image" class="img-rounded img-responsive">
+							</div>
+							<div class="name">
+								<h3 class="title">@model.tipo</h3>
+							</div>
+						</div>
+					</div>
+					<div class="description text-center">
+						<p>An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
+					</div>
 
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3">
 							<div class="content">
 
 								<div class="profile-tabs">
-									 <div class="nav-align-center">
-										 <ul class="nav nav-pills" role="tablist">
-											 <li class="active">
-												 <a href="#soja" role="tab" data-toggle="tab">
+									<div class="nav-align-center">
+										<ul class="nav nav-pills" role="tablist">
+											<li class="active">
+												<a href="#soja" role="tab" data-toggle="tab">
 												 Soja
 												 </a>
-											 </li>
-											 <li>
-	 				                <a href="#trigo" role="tab" data-toggle="tab">
+											</li>
+											<li>
+												<a href="#trigo" role="tab" data-toggle="tab">
 	 													Trigo
 													</a>
-	 				             </li>
-											 <li>
-	 				                <a href="#milho" role="tab" data-toggle="tab">
+											</li>
+											<li>
+												<a href="#milho" role="tab" data-toggle="tab">
 	 													Milho
 													</a>
-	 				             </li>
+											</li>
 										</ul>
-										</div>
+									</div>
 								</div>
 								<br>
 								<br>
@@ -55,24 +55,24 @@
 								<div class="tab-content gallery">
 									<div class="tab-pane active" id="soja">
 										<div class='row'>
-											@html.include('/tables/tablesoja')
-								</div>
-								</div>
-								<div class="tab-pane text-center" id="trigo">
-								 <div class="row">
-										@html.include('/tables/tabletrigo')
-									 </div>
-							 </div>
-							 <div class="tab-pane text-center" id="milho">
-								<div class="row">
-									 @html.include('/tables/tablemilho')
+											@html.include('/tables/tableproduto')
+										</div>
 									</div>
+									<div class="tab-pane text-center" id="trigo">
+										<div class="row">
+											@html.include('/tables/tableproduto')
+										</div>
+									</div>
+									<div class="tab-pane text-center" id="milho">
+										<div class="row">
+											@html.include('/tables/tableproduto')
+										</div>
+									</div>
+								</div>
 							</div>
-							</div>
-					 </div>
 
 							<!-- <div class="profile-tabs"> -->
-			                    <!-- <div class="nav-align-center">
+							<!-- <div class="nav-align-center">
 									<ul class="nav nav-pills" role="tablist">
 										<li class="active">
 											<a href="#studio" role="tab" data-toggle="tab">
@@ -93,8 +93,8 @@
 				                            </a>
 				                        </li>
 				                    </ul> -->
-									<!--Começo do tab-->
- 									<!-- <div class="tab-content gallery">
+							<!--Começo do tab-->
+							<!-- <div class="tab-content gallery">
 										<div class="tab-pane active" id="studio">
 				                <div class="row">
 													<div class="col-md-5">
@@ -137,21 +137,21 @@
 												</div>
 				             </div>
 				         	</div>-->
-									<!--Fim do tab-->
-								<!-- </div> -->
+							<!--Fim do tab-->
+							<!-- </div> -->
 							<!-- </div> -->
 							<!-- End Profile Tabs -->
 						</div>
-	                </div>
+					</div>
 
-	            </div>
-	        </div>
+				</div>
+			</div>
 		</div>
 
-    </div>
-    <footer class="footer">
-        <div class="container">
-            <nav class="pull-left">
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<nav class="pull-left">
 				<ul>
 					<li>
 
@@ -166,10 +166,10 @@
 
 					</li>
 				</ul>
-            </nav>
-        </div>
-    </footer>
+			</nav>
+		</div>
+	</footer>
 
 
 </body>
-	@html.include('/partials/script')
+@html.include('/partials/script')

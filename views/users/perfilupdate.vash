@@ -1,0 +1,107 @@
+<head>
+		@html.include('/partials/header')
+</head>
+<body class="profile-page">
+		@html.include('/partials/nav')
+    <div class="wrapper">
+		<div class="header header-filter" style="background-image: url('/img/pexels-photo-355312.jpeg');"></div>
+		<div class="main main-raised">
+			<div class="profile-content">
+	            <div class="container">
+	                <div class="row">
+	                    <div class="profile">
+											<div class="avatar">
+													<img src="/img/user.png" alt="Circle Image" class="img-rounded img-responsive">
+											</div>
+	                        <div class="name">
+	                            <h3 class="title">Editar Perfil</h3>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="description text-center">
+												<h4>ID: @model.user.id</h4>
+												<div class="card card-signup">
+													<form class="form" method="post" action="update">
+														@if(model.error){
+															<div class="alert alert-info">
+																    <div class="container-fluid">
+																	  <div class="alert-icon">
+																		<i class="material-icons">info_outline</i>
+																	  </div>
+																	  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+																		<span aria-hidden="true"><i class="material-icons">clear</i></span>
+																	  </button>
+																	  <b>Erro:</b> @model.error
+																    </div>
+																</div>
+														}
+														<h4 class="text-divider"></h4>
+														<div class="content">
+															<div class="input-group">
+																<span class="input-group-addon">
+																	<i class="material-icons">face</i>
+																</span>
+																<input type="text" name="nome_completo" id="nome_completo" class="form-control" placeholder="Nome">
+															</div>
+															<div class="input-group">
+																<span class="input-group-addon">
+																	<i class="material-icons">call</i>
+																</span>
+																<input type="text" name='fone' placeholder="Telefone" id="fone" class="form-control" />
+															</div>
+															<div class="input-group">
+																<span class="input-group-addon">
+																	<i class="material-icons">perm_identity</i>
+																</span>
+																<input type="text" name='cpf' placeholder="CPF" id="cpf" class="form-control" />
+															</div>
+
+
+															<!-- If you want to add a checkbox to this form, uncomment this code
+
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox" name="optionsCheckboxes" checked>
+																	Subscribe to newsletter
+																</label>
+															</div> -->
+														</div>
+														<div class="footer text-center">
+															<button class="btn btn-primary" type="submit" >Confirmar update</button>
+														</div>
+
+													</form>
+												</div>
+	                </div>
+	            </div>
+	        </div>
+		</div>
+<br>
+<br>
+<br>
+<br>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <nav class="pull-left">
+				<ul>
+					<li>
+
+					</li>
+					<li>
+
+					</li>
+					<li>
+
+					</li>
+					<li>
+
+					</li>
+				</ul>
+            </nav>
+        </div>
+    </footer>
+
+
+</body>
+	@html.include('/partials/script')

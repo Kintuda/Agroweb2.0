@@ -13,11 +13,10 @@
 					<div class="row">
 						<div class="profile">
 							<div class="avatar">
-								<img src="/img/fertilizantes.png" alt="Circle Image" class="img-rounded img-responsive">
+								<img src="/img/Trator-Desgovernado.png" alt="Circle Image" class="img-rounded img-responsive">
 							</div>
 							<div class="name">
-								<h3 class="title">@model.tipo</h3>
-
+								<h3 class="title">@model.title</h3>
 							</div>
 						</div>
 					</div>
@@ -29,7 +28,6 @@
 						<div class="col-md-6 col-md-offset-3">
 							<div class="content">
 
-
 								<br>
 								<br>
 
@@ -39,18 +37,15 @@
 											@html.include('/tables/tableproduto')
 										</div>
 									</div>
-									<div class="tab-pane text-center" id="work">
-										<div class="row">
-											<h1>teste</h1>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
+
 	</div>
 	<footer class="footer">
 		<div class="container">

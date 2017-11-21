@@ -5,24 +5,35 @@
           <th>Produto</th>
           <th>Empresa</th>
           <th>Local</th>
-          <th class="text-right">Preço</th>
-          <th class="text-right">Link</th>
+          <th>Preço</th>
+          <th>qt</th>
+          <th>Link</th>
+          <th>CadastroID</th>
+
       </tr>
   </thead>
   <tbody>
     @model.produto.forEach(function(item){
     <tr>
+
       <td>@item.produtoid</td>
       <td>@item.produtonome</td>
       <td>@item.empresa</td>
       <td>@item.local</td>
-      <td>@item.produtopreco</td>
+      <td>R$@item.produtopreco</td>
+      <td>@item.produtoqt KG</td>
       <td>
-        <a href="#">
+        <a href='/'>
           <i class="material-icons">announcement</i>
-        </a>Link
+        </a>@item.url
+      </td>
+      <td>
+        <a href='/'>
+          <i class="material-icons">announcement</i>
+        </a>@item.cadastro
       </td>
     </tr>
     })
+
   </tbody>
 </table>

@@ -19,15 +19,39 @@
 	                    </div>
 	                </div>
 	                <div class="description text-center">
-													<h4>ID: @model.user.id</h4>
-													<h4>Nome completo: @model.user.nome_completo <a href='/about'> <i class="material-icons">update</i> </a></h4>
-													<h4>Email: @model.user.email <a href='/about'> <i class="material-icons">update</i> </a></h4>
-													<h4>Telefone: @model.user.fone <a href='/about'> <i class="material-icons">update</i> </a></h4>
-													<h4>CPF: @model.user.cpf <a href='/about'> <i class="material-icons">update</i> </a></h4>
-													<br>
-													<br>
-													<br>
-													<br>
+										<table class="table">
+											<thead>
+													<tr>
+															<th class="text-center">ID</th>
+															<th>Nome </th>
+															<th>Email</th>
+															<th>Telefone</th>
+															<th>CPF</th>
+													</tr>
+											</thead>
+											<tbody>
+												@model.user.forEach(function(item){
+												<tr>
+													<td>@item.id</td>
+													<td>@item.nome_completo<a href='/perfil/update'>
+														<i class="material-icons">create</i>
+													</a></td>
+													<td>@item.email<a href='/perfil/update'>
+														<i class="material-icons">create</i>
+													</a></td>
+													<td>@item.fone<a href='/perfil/update'>
+														<i class="material-icons">create</i>
+													</a></td>
+													<td>@item.cpf<a href='/perfil/update'>
+														<i class="material-icons">create</i>
+													</a></td>
+
+
+												</tr>
+												})
+
+											</tbody>
+										</table>
 	                </div>
 	            </div>
 	        </div>

@@ -1,19 +1,19 @@
 <nav class="navbar navbar-transparent navbar-absolute">
   <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/"><i class="material-icons">home</i></a>
+      <a class="navbar-brand" href="/"><i class="material-icons">home</i></a>
 
-      </div>
+    </div>
 
-      <div class="collapse navbar-collapse" id="navigation-example">
-        <ul class="nav navbar-nav navbar-right">
+    <div class="collapse navbar-collapse" id="navigation-example">
+      <ul class="nav navbar-nav navbar-right">
         <li>
           <a href="/produto" target="">
             <i class="material-icons">shopping_basket</i> Produtos
@@ -21,29 +21,29 @@
         </li>
         @if(!model.nome){
         <li>
-        <a href="/users/login" target="">
+          <a href="/users/login" target="">
           <i class="material-icons">account_circle</i> Login
         </a>
         </li>
-}
+        }
         <li>
-        <a href="/about" target="">
+          <a href="/about" target="">
           <i class="material-icons">info_outline</i> Sobre
         </a>
         </li>
         @if (model.nome) {
-          <li>
+        <li>
           <a href="/perfil">
             <i class="material-icons">check_circle</i> Bem-vindo @model.nome
           </a>
-          </li>
-          <li>
+        </li>
+        <li>
           <a class="nav-link" href="users/logout">
             <i class="material-icons">exit_to_app</i>Logoff
           </a>
-          </li>
+        </li>
         }
-        </ul>
-      </div>
+      </ul>
+    </div>
   </div>
 </nav>
