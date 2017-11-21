@@ -68,15 +68,15 @@
 	            </div>
 
 	        	<div class="section text-center">
-	                <h2 class="title">Categoria de produtos</h2>
+	                <h2 class="title">Membros da equipe</h2>
 
 					<div class="team">
 						<div class="row">
 							<div class="col-md-4">
 			                    <div class="team-player">
-			                        <img src="/img/Trator-Desgovernado.png" alt="Thumbnail Image" class="img-rounded img-responsive">
-			                        <h4 class="title">Gigi Hadid <br />
-										<small class="text-muted">Model</small>
+			                        <img src="/img/user.png" alt="Thumbnail Image" class="img-raised img-circle">
+			                        <h4 class="title">Thiago <br />
+										<small class="text-muted">Fundador/DBA</small>
 									</h4>
 			                        <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
 									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
@@ -84,11 +84,35 @@
 									<a href="#pablo" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
 			                    </div>
 			                </div>
+											<div class="col-md-4">
+							                    <div class="team-player">
+							                        <img src="/img/user.png" alt="Thumbnail Image" class="img-raised img-circle">
+							                        <h4 class="title">Marcio <br />
+														<small class="text-muted">Fundador/Desenvolvedor</small>
+													</h4>
+							                        <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+													<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
+													<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-instagram"></i></a>
+													<a href="#pablo" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
+							                    </div>
+							                </div>
+											<div class="col-md-4">
+							                    <div class="team-player">
+							                        <img src="/img/user.png" alt="Thumbnail Image" class="img-raised img-circle">
+							                        <h4 class="title">Ricardo <br />
+														<small class="text-muted">Fundador/DBA</small>
+													</h4>
+							                        <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+													<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
+													<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-instagram"></i></a>
+													<a href="#pablo" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
+							                    </div>
+							                </div>
 			                <div class="col-md-4">
 			                    <div class="team-player">
-			                        <img src="/img/shutterstock_82261135-525x420.jpg" alt="Thumbnail Image" class="img-rounded img-responsive" >
-			                        <h4 class="title">Christian Louboutin<br />
-										<small class="text-muted">Designer</small>
+			                        <img src="/img/user.png" alt="Thumbnail Image" class="img-raised img-circle" >
+			                        <h4 class="title">Hugo<br />
+										<small class="text-muted">Desenvolvedor</small>
 									</h4>
 			                        <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
 									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
@@ -97,14 +121,13 @@
 			                </div>
 			                <div class="col-md-4">
 			                    <div class="team-player">
-			                        <img src="/img/fertilizantes.png" alt="Thumbnail Image" class="img-rounded img-responsive">
-			                        <h4 class="title">Fertilizantes<br/>
-										<small class="text-muted">Model</small>
+			                        <img src="/img/user.png" alt="Thumbnail Image" class="img-raised img-circle">
+			                        <h4 class="title">Kin<br/>
+										<small class="text-muted">Desenvolvedor</small>
 									</h4>
 			                        <p>You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
 									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-google-plus"></i></a>
-									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-youtube-play"></i></a>
-									<a href="#pablo" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-twitter"></i></a>
+									<a href="https://br.linkedin.com/"><i class="fa fa-linkedin"></i></a>
 			                    </div>
 			                </div>
 						</div>
@@ -157,5 +180,9 @@
 
 	</div>
 </body>
+<footer>
+
+
+</footer>
 @html.include('/partials/script')
 </html>

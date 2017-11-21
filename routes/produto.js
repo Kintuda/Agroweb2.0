@@ -15,10 +15,10 @@ router.get('/grao', async (req, res, next) => {
   })
 
 })
-router.get('/adubo', function(req, res, next) {
+router.get('/adubo', async function(req, res, next) {
   res.render('produto_adubo',{tipo:'Adubo',nome:(req.user ?req.user.nome_completo : '')});
 });
-router.get('/ferramentas', function(req, res, next) {
+router.get('/ferramentas', async function(req, res, next) {
   res.render('produto_ferramentas',{titlepo:'Ferramentas',nome:(req.user ?req.user.nome_completo : '')});
 });
 module.exports = router;

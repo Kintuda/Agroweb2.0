@@ -26,6 +26,7 @@ module.exports = function () {
               nome_completo: first.nome_completo,
               email:first.email,
               fone:first.fone,
+              cpf:first.cpf,
             })
           } else {
             cb(null, false)

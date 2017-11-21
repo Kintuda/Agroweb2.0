@@ -92,11 +92,11 @@ router.post('/cadastro', async function(req, res, next) {
 
   var senha = criptografia.hashPwd(user.senha)
   sql = `
-  INSERT INTO usuarios(email, senha, ativo, data_cadastro, nome_completo,fone)
-  VALUES ($1, $2, TRUE, CURRENT_DATE, $3,$4);`
+  INSERT INTO usuarios(email, senha, ativo, data_cadastro, nome_completo,fone,cpf)
+  VALUES ($1, $2, TRUE, CURRENT_DATE, $3,$4,$5);`
 
   try {
-    var result = await db.query(sql, [user.email, senha, user.nome_completo,user.fone])
+    var result = await db.query(sql, [user.email, senha, user.nome_completo,user.fone,user.cpf])
 
     if (result.rowCount === 0) {
       req.body.senha = ''
