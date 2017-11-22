@@ -13,9 +13,11 @@ router.use(function(req, res, next) {
 /* GET users listing. */
 router.get('/', async function(req, res, next) {
   var result = await db.query('SELECT * FROM usuarios where id=$1',[req.user.id])
+  var produto = await db.query('SELECT * FROM produto where cadastro=$1',[req.user.id])
   res.render('users/perfil',{nome:(req.user ?req.user.nome_completo : ''),
   user:result.rowCount > 0 ? result.rows : null,
-  nome_completo:(req.user ?req.user.nome_completo : '')});
+  nome_completo:(req.user ?req.user.nome_completo : ''),
+  produto:produto.rowCount > 0 ? produto.rows : null})
 });
 router.get('/update', async (req, res, next) => {
   res.render('users/perfilupdate',{

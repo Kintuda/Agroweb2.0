@@ -27,26 +27,52 @@
 															<th>Email</th>
 															<th>Telefone</th>
 															<th>CPF</th>
+															<th></th>
+															<th></th>
 													</tr>
 											</thead>
 											<tbody>
 												@model.user.forEach(function(item){
 												<tr>
 													<td>@item.id</td>
-													<td>@item.nome_completo<a href='/perfil/update'>
+													<td>@item.nome_completo</td>
+													<td>@item.email</td>
+													<td>@item.fone</td>
+													<td>@item.cpf</td>
+													<td><a href='/perfil/update'>
 														<i class="material-icons">create</i>
 													</a></td>
-													<td>@item.email<a href='/perfil/update'>
-														<i class="material-icons">create</i>
-													</a></td>
-													<td>@item.fone<a href='/perfil/update'>
-														<i class="material-icons">create</i>
-													</a></td>
-													<td>@item.cpf<a href='/perfil/update'>
-														<i class="material-icons">create</i>
-													</a></td>
+												</tr>
+												})
 
-
+											</tbody>
+										</table>
+										<br>
+										<h3>Produtos cadastrados por @model.nome</h3>
+										<br>
+										<table class="table">
+											<thead>
+													<tr>
+															<th class="text-center">ID</th>
+															<th>Produto </th>
+															<th>Quantidade</th>
+															<th>Preço</th>
+															<th>Empresa</th>
+															<th></th>
+															<th></th>
+													</tr>
+											</thead>
+											<tbody>
+												@model.produto.forEach(function(item){
+												<tr>
+													<td>@item.produtoid</td>
+													<td>@item.produtonome</td>
+													<td>@item.produtoqt</td>
+													<td>R$@item.produtopreco</td>
+													<td>@item.empresa</td>
+													<td><a href='/perfil/update'>
+														<i class="material-icons">create</i>
+													</a></td>
 												</tr>
 												})
 

@@ -80,4 +80,18 @@ router.post('/cadastro', async (req, res, next) => {
     produto:produto
   })
 })
+router.post('/delete', async function (req, res, next) {
+  var id = req.body.id
+  var sql = `
+  DELETE FROM usuarios WHERE id = $1
+  `
+  var result = await db.query(sql, [id])
+
+  if (result.rowCount === 0) {
+    return res.json({excluiu: false, err: 'Ocorreu um erro desconhecido!'})
+  }
+
+  return res.json({excluiu: true})
+})
+
 module.exports = router;
