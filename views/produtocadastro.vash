@@ -48,6 +48,12 @@
 									</div>
 									<div class="input-group">
 										<span class="input-group-addon">
+											<i class="material-icons">label_outline</i>
+										</span>
+										<input type="text" id="unidade" name="unidade" placeholder="Unidade do produto" class="form-control" />
+									</div>
+									<div class="input-group">
+										<span class="input-group-addon">
 											<i class="material-icons">subject</i>
 										</span>
 										<select class="form-control" name="categoria" id="categoria">

@@ -55,17 +55,17 @@
 								<div class="tab-content gallery">
 									<div class="tab-pane active" id="soja">
 										<div class='row'>
-											@html.include('/tables/tableproduto')
+											@html.include('/tables/tableprodutosoja')
 										</div>
 									</div>
 									<div class="tab-pane text-center" id="trigo">
 										<div class="row">
-											@html.include('/tables/tableproduto')
+											@html.include('/tables/tableprodutotrigo')
 										</div>
 									</div>
 									<div class="tab-pane text-center" id="milho">
 										<div class="row">
-											@html.include('/tables/tableproduto')
+											@html.include('/tables/tableprodutomilho')
 										</div>
 									</div>
 								</div>

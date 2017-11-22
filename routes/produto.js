@@ -10,29 +10,38 @@ router.get('/', async function(req, res, next) {
 });
 router.get('/grao', async (req, res, next) => {
   var result = await db.query('SELECT * FROM produto')
+  var graos = result.rows.filter(function(v){
+    return v.categoriaid === 1
+  })
   res.render('../views/produto_grao', {
     nome: req.user.nome_completo,
     id:req.user.id,
-    produto: result.rowCount > 0 ? result.rows : null,
+    produto:graos,
     nome:(req.user ?req.user.nome_completo : '')
   })
 
 })
 router.get('/adubo', async function(req, res, next) {
-  var result = await db.query('SELECT * FROM produto')
+  var result = await db.query('SELECT * FROM produto');
+  var adubo = result.rows.filter(function(v){
+    return v.categoriaid === 2
+  });
   res.render('produto_adubo',{tipo:'Adubo',nome:(req.user ?req.user.nome_completo : ''),
   nome: req.user.nome_completo,
   id:req.user.id,
-  produto: result.rowCount > 0 ? result.rows : null,
+  produto: adubo,
   nome:(req.user ?req.user.nome_completo : '')
 });
 });
 router.get('/maquinas', async function(req, res, next) {
-  var result = await db.query('SELECT * FROM produto')
+  var result = await db.query('SELECT * FROM produto');
+  var maquina = result.rows.filter(function(v){
+    return v.categoriaid === 3
+  })
   res.render('produto_maquinas',{title:'Máquinas',nome:(req.user ?req.user.nome_completo : ''),
   id:req.user.id,
   nome: req.user.nome_completo,
-  produto: result.rowCount > 0 ? result.rows : null,
+  produto: maquina,
   nome:(req.user ?req.user.nome_completo : '')
   });
 });
@@ -55,9 +64,9 @@ router.post('/cadastro', async (req, res, next) => {
   var params = []
   var sql = ''
   sql = `
-  INSERT INTO produto (produtonome, produtopreco, produtoqt,categoriaid,empresa,local,url,cadastro) VALUES ($1, $2, $3, $4,$5,$6,$7,$8)
+  INSERT INTO produto (produtonome, produtopreco, produtoqt,categoriaid,empresa,local,url,cadastro,unidade) VALUES ($1, $2, $3, $4,$5,$6,$7,$8,$9)
   `
-  params = [produto.nome, produto.preco, produto.qt, produto.categoria,produto.empresa,produto.local,produto.url,req.user.id]
+  params = [produto.nome, produto.preco, produto.qt, produto.categoria,produto.empresa,produto.local,produto.url,req.user.id,produto.unidade]
 
   var result = await db.query(sql, params)
 
