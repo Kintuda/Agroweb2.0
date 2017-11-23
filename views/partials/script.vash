@@ -12,5 +12,36 @@
 
 	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
 	<script src="/js/material-kit.js" type="text/javascript"></script>
-	<script></script>
-	@html.block('scriptsjs')
+	<script>
+  function del(id, nome) {
+    var confirmacao = confirm(`Tem certeza que deseja excluir a pessoa de nome ${nome_completo}?`)
+    if (confirmacao) {
+      var form = new FormData()
+      form.append('json', JSON.stringify({
+        id: id
+      }))
+      var headers = {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      }
+      fetch('/perfil/deleteproduto/', {
+          method: 'POST',
+          headers: headers,
+          credentials: "same-origin",
+          body: JSON.stringify({
+            id: id
+          })
+        })
+        .then(function (r) {
+          return r.json()
+        })
+        .then(function (result) {
+          if (result && !result.err) {
+            location.href = location.href
+          } else {
+            alert(result.err)
+          }
+        })
+    }
+  }
+</script>

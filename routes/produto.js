@@ -3,6 +3,12 @@ var router = express.Router();
 var db = require('../db/connect');
 
 /* GET users listing. */
+router.use(function(req, res, next) {
+  if (!req.isAuthenticated()) {
+    return res.redirect('/users/login')
+  }
+  next()
+})
 router.get('/', async function(req, res, next) {
   var result = await db.query('SELECT * FROM usuarios')
   res.render('produto',{nome:(req.user ?req.user.nome_completo : ''),
@@ -17,7 +23,9 @@ router.get('/grao', async (req, res, next) => {
     nome: req.user.nome_completo,
     id:req.user.id,
     produto:graos,
-    nome:(req.user ?req.user.nome_completo : '')
+    nome:(req.user ?req.user.nome_completo : ''),
+    pessoas: result.rowCount > 0 ? result.rows : null
+
   })
 
 })
@@ -92,6 +100,10 @@ router.post('/delete', async function (req, res, next) {
   }
 
   return res.json({excluiu: true})
+})
+router.get('/users/logout', function(req, res, next) {
+  req.logout()
+  res.redirect('/')
 })
 
 module.exports = router;

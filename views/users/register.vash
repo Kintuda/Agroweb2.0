@@ -13,6 +13,7 @@
 						<div class="card card-signup">
 							<form class="form" method="post" action="cadastro">
 								@if(model.error){
+									
 									<div class="alert alert-info">
 										    <div class="container-fluid">
 											  <div class="alert-icon">

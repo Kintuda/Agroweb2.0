@@ -19,7 +19,8 @@
 	                    </div>
 	                </div>
 	                <div class="description text-center">
-										<table class="table">
+										<div class="table-responsive">
+										<table class="table table-hover table-small-font">
 											<thead>
 													<tr>
 															<th class="text-center">ID</th>
@@ -42,15 +43,18 @@
 													<td><a href='/perfil/update'>
 														<i class="material-icons">create</i>
 													</a></td>
+													<td><button  onclick="del(@item.id,@item.nome_completo)"><i class="material-icons">delete</i></button></td>
 												</tr>
 												})
 
 											</tbody>
 										</table>
+										</div>
 										<br>
 										<h3>Produtos cadastrados por @model.nome</h3>
 										<br>
-										<table class="table">
+										<div class="table-responsive">
+										<table class="table table-hover table-small-font">
 											<thead>
 													<tr>
 															<th class="text-center">ID</th>
@@ -70,14 +74,20 @@
 													<td>@item.produtoqt</td>
 													<td>R$@item.produtopreco</td>
 													<td>@item.empresa</td>
-													<td><a href='/perfil/update'>
+													<td><a href='/perfil/updateproduto/@item.produtoid'>
 														<i class="material-icons">create</i>
 													</a></td>
+													<td>
+														<button onclick="del('@item.id', '@item.nome')" class="btn btn-info">
+									          <span class="oi oi-trash" title="trash Icon" aria-hidden="true"></span>
+										        </button>
+													</td>
 												</tr>
 												})
 
 											</tbody>
 										</table>
+										</div>
 	                </div>
 	            </div>
 	        </div>

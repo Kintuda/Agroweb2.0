@@ -3,6 +3,7 @@ var router = express.Router()
 var db = require('../db/connect')
 var criptografia = require('../config/criptografia')
 var passport = require('passport')
+var expressValidator = require('express-validator');
 // antes de fazer qualquer coisa, verifica se está autenticado
 router.use(function(req, res, next) {
   if (
@@ -75,6 +76,7 @@ router.post('/login', function(req, res, next) {
   }
 });
 router.post('/cadastro', async function(req, res, next) {
+
   var user = req.body
 
   var sql = `SELECT * FROM usuarios WHERE email = $1`
@@ -148,7 +150,6 @@ router.post('/cadastro', async function(req, res, next) {
     })
   }
 })
-
 router.get('/logout', function(req, res, next) {
   req.logout()
   res.redirect('/')

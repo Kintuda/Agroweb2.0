@@ -22,7 +22,7 @@
         @if(!model.nome){
         <li>
           <a href="/users/login" target="">
-          <i class="material-icons">account_circle</i> Login
+          <i class="material-icons">account_circle</i> Login/Cadastro
         </a>
         </li>
         }
