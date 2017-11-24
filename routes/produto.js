@@ -3,6 +3,15 @@ var router = express.Router();
 var db = require('../db/connect');
 
 /* GET users listing. */
+router.use(function(req, res, next) {
+  if (
+    req.isAuthenticated() &&
+    ['/users/login', '/users/cadastro'].indexOf(req.originalUrl) > -1
+  ) {
+    return res.redirect('/')
+  }
+  next()
+})
 router.get('/', async function(req, res, next) {
   var result = await db.query('SELECT * FROM usuarios')
   res.render('produto',{nome:(req.user ?req.user.nome_completo : ''),
