@@ -30,7 +30,7 @@
 
 								<div class="profile-tabs">
 									<div class="nav-align-center">
-										<ul class="nav nav-pills" role="tablist">
+										<ul class="nav nav-pills nav-pills-success" role="tablist">
 											<li class="active">
 												<a href="#soja" role="tab" data-toggle="tab">
 												 Soja

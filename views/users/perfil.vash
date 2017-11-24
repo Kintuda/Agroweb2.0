@@ -40,8 +40,14 @@
 													<td>@item.fone</td>
 													<td>@item.cpf</td>
 													<td><a href='/perfil/update'>
-														<i class="material-icons">create</i>
+														<i class="fa fa-edit"></i>
 													</a></td>
+													<td><a href='/perfil/update'>
+														<i class="fa fa-times"></i>
+													</a></td>
+
+
+
 												</tr>
 												})
 
@@ -71,7 +77,10 @@
 													<td>R$@item.produtopreco</td>
 													<td>@item.empresa</td>
 													<td><a href='/perfil/update'>
-														<i class="material-icons">create</i>
+														<i class="fa fa-edit"></i>
+													</a></td>
+													<td><a href='/perfil/update'>
+														<i class="fa fa-times"></i>
 													</a></td>
 												</tr>
 												})

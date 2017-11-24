@@ -28,7 +28,8 @@
 						<div class="col-md-8 col-md-offset-2">
 							<h2 class="title">informações em destaque</h2>
 
-							<h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.</h5>
+							<h5 class="description">
+							A agricultura não só dá riquezas a uma nação, mas a única riqueza que ela pode chamar de sua própria. </h5>
 						</div>
 					</div>
 
@@ -51,10 +52,6 @@
 										<i class="material-icons">insert_chart</i>
 									</div>
 									<h4 class="info-title">Notícia em destaque</h4>
-									<!-- Widgets NotÃ­cias AgrÃ­colas - www.noticiasagricolas.com.br/widgets -->
-									<!-- Widgets NotÃ­cias AgrÃ­colas - www.noticiasagricolas.com.br/widgets -->
-									<!-- Widgets NotÃ­cias AgrÃ­colas - www.noticiasagricolas.com.br/widgets -->
-									<!-- Widgets NotÃ­cias AgrÃ­colas - www.noticiasagricolas.com.br/widgets -->
 									<script type="text/javascript" src="https://www.noticiasagricolas.com.br/widget/noticias.js.php?subsecao=2,3,6,7,8,10,64,80,85,146,5,4,11,12,156,40,60,13,97,14,95,15,1,155,84,28,149,26,69,90,62,27,92,148,154&largura=auto&altura=auto&fonte=Arial%2C%20Helvetica%2C%20sans-serif&tamanho=10pt&cortexto=333333&corlink=006666&qtd=7&output=js"></script>
 								</div>
 							</div>
@@ -82,7 +79,7 @@
 									<h4 class="title">Thiago <br/>
 										<small class="text-muted">Fundador/DBA</small>
 									</h4>
-									<p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+									<p class="description">Thiago é responsável pela manutenção e desenvolvimento das tarefas relacionadas ao banco de dados.</p>
 									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
 									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-instagram"></i></a>
 									<a href="https://www.facebook.com/" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
