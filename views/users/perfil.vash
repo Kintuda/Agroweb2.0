@@ -3,6 +3,18 @@
 </head>
 <body class="profile-page">
 		@html.include('/partials/nav')
+		@if(model.sucess=true){
+		<div class="alert alert-success">
+	    <div class="container-fluid">
+		  <div class="alert-icon">
+			<i class="material-icons">check</i>
+		  </div>
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true"><i class="material-icons">clear</i></span>
+		  </button>
+	      <b>Sucesso:</b> Update do produto realizado
+	    </div>
+	</div>}
     <div class="wrapper">
 		<div class="header header-filter" style="background-image: url('/img/pexels-photo-355312.jpeg');"></div>
 		<div class="main main-raised">
@@ -70,7 +82,7 @@
 													<td>@item.produtoqt</td>
 													<td>R$@item.produtopreco</td>
 													<td>@item.empresa</td>
-													<td><a href='/perfil/update'>
+													<td><a href='/perfil/updateproduto/@item.produtoid'>
 														<i class="material-icons">create</i>
 													</a></td>
 												</tr>
