@@ -42,7 +42,7 @@
 													</a>
 	 				             </li>
 											 @if(model.nome!=''){
-											 <li>
+											 <li class="active">
 												 <a href="/produto/cadastro">
 													 Adicionar produto
 												 </a>
