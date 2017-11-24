@@ -30,7 +30,7 @@ router.get('/login', function(req, res, next) {
 router.post('/login', function(req, res, next) {
   console.log(req.body)
   if (!(req.body.email && req.body.senha)) {
-    res.render('users/login', {
+    res.render('../views/users/login', {
       error: 'Todos os campos são obrigatórios!',
       user: req.body
     })

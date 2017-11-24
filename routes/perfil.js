@@ -79,37 +79,34 @@ router.post('/updateproduto/:id?', async (req, res, next) => {
   }
 
   return res.render('../views/users/perfilupdate', {
-    error: 'Ocorreu algum erro',
-    sucess:true
+    error: 'Ocorreu algum erro'
   })
 })
-router.post('/delete/', async function (req, res, next) {
-  var id = req.user.id
-  var sql = `
-  DELETE FROM usuarios WHERE id = $1
-  `
+router.get('/delete/:id?', async(req,res,next)=>{
+  var produtoid = req.params.id
+  var result = await db.query('SELECT * FROM produto where produtoid=$1',[produtoid])
+  res.render('../views/users/produtodelete',{
+    produtoid:req.params.id,
+    produto:result.rowCount > 0 ? result.rows : null,
+    nome_completo:(req.user ?req.user.nome_completo : '')
+  });
 
-  var result = await db.query(sql, [id])
-
-  if (result.rowCount === 0) {
-    return res.json({excluiu: false, err: 'Ocorreu um erro desconhecido!'})
-  }
-
-  return res.json({excluiu: true})
 })
-router.post('/deleteproduto/', async function (req, res, next) {
-  var id = req.params.id
+router.post('/delete/:id?', async (req, res, next) => {
+  var produtoid = req.params.id
+  var user = req.user
+  res
+  var id = produtoid
   var sql = `
   DELETE FROM produto WHERE produtoid = $1
   `
-
   var result = await db.query(sql, [id])
 
-  if (result.rowCount === 0) {
-    return res.json({excluiu: false, err: 'Ocorreu um erro desconhecido!'})
+  return res.redirect('/perfil/')
+  if (error) {
+    return res.render('../views/users/perfilupdate', {
+      error: 'Ocorreu algum erro'
+    })
   }
-
-  return res.json({excluiu: true})
-
 })
 module.exports = router;
