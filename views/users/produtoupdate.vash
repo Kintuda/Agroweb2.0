@@ -48,11 +48,11 @@
 																<span class="input-group-addon">
 																	<i class="material-icons">call</i>
 																</span>
-<<<<<<< HEAD
+
 																<input type="text" name='preco' value="Preço @model.produto[0].produtopreco" id="preco" class="form-control" />
-=======
+
 																<input type="text" name='preco' value="@model.produto[0].produtopreco" id="preco" class="form-control" />
->>>>>>> 7e3f6685fc00e276e2151b10c90793f4d7b44549
+
 															</div>
 															<div class="input-group">
 																<span class="input-group-addon">
@@ -108,7 +108,7 @@
 														<div class="footer text-center">
 															<button class="btn btn-primary" type="submit" >Confirmar update</button>
 														</div>
-													</form>												
+													</form>
 												</div>
 	                </div>
 	            </div>

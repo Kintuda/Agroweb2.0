@@ -57,6 +57,7 @@ router.get('/updateproduto/:id?', async (req, res, next) => {
     nome_completo:(req.user ?req.user.nome_completo : '')
   });
 })
+
 router.post('/updateproduto/:id?', async (req, res, next) => {
   var produtoid = req.params.id
   console.log(produtoid)
