@@ -42,19 +42,19 @@
 																<span class="input-group-addon">
 																	<i class="material-icons">face</i>
 																</span>
-																<input type="text" name="nome" id="nome" class="form-control" placeholder="@model.produto[0].produtonome">
+																<input type="text" name="nome" id="nome" class="form-control" value="@model.produto[0].produtonome">
 															</div>
 															<div class="input-group">
 																<span class="input-group-addon">
 																	<i class="material-icons">call</i>
 																</span>
-																<input type="text" name='preco' placeholder="Preço @model.produto[0].produtopreco" id="preco" class="form-control" />
+																<input type="text" name='preco' value="Preço @model.produto[0].produtopreco" id="preco" class="form-control" />
 															</div>
 															<div class="input-group">
 																<span class="input-group-addon">
 																	<i class="material-icons">perm_identity</i>
 																</span>
-																<input type="text" name='qt' placeholder="@model.produto[0].produtoqt" id="qt" class="form-control" />
+																<input type="text" name='qt' value="@model.produto[0].produtoqt" id="qt" class="form-control" />
 															</div>
 															<div class="input-group">
 																<span class="input-group-addon">
@@ -70,25 +70,25 @@
 																<span class="input-group-addon">
 																	<i class="material-icons">speaker_notes</i>
 																</span>
-																<input type="text" name='unidade' placeholder="@model.produto[0].unidade" id="unidade" class="form-control" />
+																<input type="text" name='unidade' value="@model.produto[0].unidade" id="unidade" class="form-control" />
 															</div>
 															<div class="input-group">
 																<span class="input-group-addon">
 																	<i class="material-icons">store</i>
 																</span>
-																<input type="text" name='empresa' placeholder="@model.produto[0].empresa" id="empresa" class="form-control" />
+																<input type="text" name='empresa' value="@model.produto[0].empresa" id="empresa" class="form-control" />
 															</div>
 															<div class="input-group">
 																<span class="input-group-addon">
 																	<i class="material-icons">edit_location</i>
 																</span>
-																<input type="text" name='local' placeholder="@model.produto[0].local" id="local" class="form-control" />
+																<input type="text" name='local' value="@model.produto[0].local" id="local" class="form-control" />
 															</div>
 															<div class="input-group">
 																<span class="input-group-addon">
 																	<i class="material-icons">contact_mail</i>
 																</span>
-																<input type="text" name='url' placeholder="@model.produto[0].url" id="url" class="form-control" />
+																<input type="text" name='url' value="@model.produto[0].url" id="url" class="form-control" />
 															</div>
 
 
