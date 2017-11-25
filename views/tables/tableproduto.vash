@@ -11,9 +11,8 @@
           <th>Empresa</th>
           <th>Local</th>
           <th>Preço</th>
-          <th>qt</th>
+          <th>Quantidade</th>
           <th>Link</th>
-          <th>CadastroID</th>
 
       </tr>
   </thead>
@@ -27,16 +26,9 @@
       <td>@item.local</td>
       <td>R$@item.produtopreco</td>
       <td>@item.produtoqt @item.unidade</td>
-      <td>
-        <a href='/'>
-          <i class="material-icons">announcement</i>
-        </a>@item.url
+      <td><button type="button" class="btn btn-primary btn-sm" data-toggle="popover" data-placement="top" title="URL do site" data-content="@item.url"><i class="material-icons">announcement</i></button>
       </td>
-      <td>
-        <a href='/'>
-          <i class="material-icons">announcement</i>
-        </a>@item.cadastro
-      </td>
+
     </tr>
     })
 
