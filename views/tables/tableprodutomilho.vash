@@ -22,7 +22,7 @@
       <td>@item.local</td>
       <td>R$@item.produtopreco</td>
       <td>@item.produtoqt @item.unidade</td>
-      <td><button type="button" class="btn btn-primary btn-sm" data-toggle="popover" data-placement="top" title="URL do site" data-content="@item.url"><i class="material-icons">announcement</i></button>
+      <td><button type="button" class="btn btn-primary btn-sm" data-toggle="popover" data-placement="top" title="Contato" data-content="@item.url"><i class="material-icons">announcement</i></button>
       </td>
     </tr>
     })
