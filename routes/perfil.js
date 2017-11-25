@@ -57,7 +57,6 @@ router.get('/updateproduto/:id?', async (req, res, next) => {
     nome_completo:(req.user ?req.user.nome_completo : '')
   });
 })
-
 router.post('/updateproduto/:id?', async (req, res, next) => {
   var produtoid = req.params.id
   console.log(produtoid)
@@ -95,8 +94,6 @@ router.get('/delete/:id?', async(req,res,next)=>{
 })
 router.post('/delete/:id?', async (req, res, next) => {
   var produtoid = req.params.id
-  var user = req.user
-  res
   var id = produtoid
   var sql = `
   DELETE FROM produto WHERE produtoid = $1
