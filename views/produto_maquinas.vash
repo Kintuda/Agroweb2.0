@@ -1,7 +1,6 @@
 <head>
 	@html.include('/partials/header')
 </head>
-
 <body class="profile-page">
 	@html.include('/partials/nav')
 	<div class="wrapper">
@@ -41,7 +40,6 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -51,18 +49,6 @@
 		<div class="container">
 			<nav class="pull-left">
 				<ul>
-					<li>
-
-					</li>
-					<li>
-
-					</li>
-					<li>
-
-					</li>
-					<li>
-
-					</li>
 				</ul>
 			</nav>
 		</div>

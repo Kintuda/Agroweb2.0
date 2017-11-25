@@ -43,6 +43,10 @@
 													<td><a href='/perfil/update'>
 														<i class="material-icons">create</i>
 													</a></td>
+													@if(!item.isadmin){
+													<td><a href='/perfil/perfildelete/@item.id'>
+														<i class="material-icons">delete</i>
+													</a></td>}
 												</tr>
 												})
 
@@ -50,7 +54,8 @@
 										</table>
 										</div>
 										<br>
-										<h3>Produtos cadastrados por @model.nome</h3>
+
+										<h3>Produtos cadastrados por @model.nome </h3>
 
 										<br>
 										@if(model.produto!=null){

@@ -13,17 +13,49 @@ router.use(function(req, res, next) {
 /* GET users listing. */
 router.get('/', async function(req, res, next) {
   var result = await db.query('SELECT * FROM usuarios where id=$1',[req.user.id])
+  var admin = result.rows[0].isadmin
   var produto = await db.query('SELECT * FROM produto where cadastro=$1',[req.user.id])
-  res.render('users/perfil',{nome:(req.user ?req.user.nome_completo : ''),
-  user:result.rowCount > 0 ? result.rows : null,
-  nome_completo:(req.user ?req.user.nome_completo : ''),
-  produto:produto.rowCount > 0 ? produto.rows : null})
+  if(admin){
+    var produto = await db.query('SELECT * FROM produto')
+    res.render('users/perfil',{nome:(req.user ?req.user.nome_completo : ''),
+    user:result.rowCount > 0 ? result.rows : null,
+    nome_completo:(req.user ?req.user.nome_completo : ''),
+    produto:produto.rowCount > 0 ? produto.rows : null})
+  }else{
+    var produto = await db.query('SELECT * FROM produto where cadastro=$1',[req.user.id])
+    res.render('users/perfil',{nome:(req.user ?req.user.nome_completo : ''),
+    user:result.rowCount > 0 ? result.rows : null,
+    nome_completo:(req.user ?req.user.nome_completo : ''),
+    produto:produto.rowCount > 0 ? produto.rows : null})
+  }
 });
 router.get('/update', async (req, res, next) => {
   res.render('users/perfilupdate',{
     user:req.user,
     nome_completo:(req.user ?req.user.nome_completo : '')
   });
+})
+router.get('/perfildelete/:id?',async (req,res,next)=>{
+  var perfilid = req.params.id
+  var result = await db.query('SELECT * FROM usuarios where id=$1',[perfilid])
+  res.render('../views/users/perfildelete',{
+    perfil:result.rowCount > 0 ? result.rows : null,
+    nome_completo:(req.user ?req.user.nome_completo : '')
+  });
+})
+router.post('/perfildelete/:id?', async (req, res, next) => {
+  var id = req.params.id
+  var sql = `
+  DELETE FROM usuarios WHERE id = $1
+  `
+  var result = await db.query(sql, [id])
+
+  return res.redirect('/users/logout')
+  if (error) {
+    return res.render('../views/users/perfilupdate', {
+      error: 'Ocorreu algum erro'
+    })
+  }
 })
 router.post('/update', async (req, res, next) => {
   var pessoa = req.user
