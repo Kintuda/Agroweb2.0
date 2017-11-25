@@ -48,11 +48,7 @@
 																<span class="input-group-addon">
 																	<i class="material-icons">call</i>
 																</span>
-
-																<input type="text" name='preco' value="Preço @model.produto[0].produtopreco" id="preco" class="form-control" />
-
 																<input type="text" name='preco' value="@model.produto[0].produtopreco" id="preco" class="form-control" />
-
 															</div>
 															<div class="input-group">
 																<span class="input-group-addon">
