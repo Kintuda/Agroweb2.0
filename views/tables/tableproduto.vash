@@ -1,5 +1,9 @@
-<div class="table-responsive">
-<table class="table table-hover table-responsive">
+<div class="">
+<div class="form-group label-floating">
+  <label class="control-label">Pesquisar produto</label>
+  <input class="form-control" type="text" id="myInput" onkeyup="myFunction()" placeholder="">
+</div>
+<table id="myTable" class="table table-hover">
   <thead>
       <tr>
           <th class="text-center">ID</th>
@@ -18,7 +22,7 @@
     <tr>
 
       <td>@item.produtoid</td>
-      <td>@item.produtonome</td>
+      <td id="prdnome">@item.produtonome</td>
       <td>@item.empresa</td>
       <td>@item.local</td>
       <td>R$@item.produtopreco</td>
