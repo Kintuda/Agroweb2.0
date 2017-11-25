@@ -49,6 +49,7 @@
 																	<i class="material-icons">call</i>
 																</span>
 																<input type="text" name='preco' value="Preço @model.produto[0].produtopreco" id="preco" class="form-control" />
+																<input type="text" name='preco' value="@model.produto[0].produtopreco" id="preco" class="form-control" />
 															</div>
 															<div class="input-group">
 																<span class="input-group-addon">
@@ -104,17 +105,7 @@
 														<div class="footer text-center">
 															<button class="btn btn-primary" type="submit" >Confirmar update</button>
 														</div>
-													</form>
-													<section class="delete">
-														<h3>Delete Data</h3>
-														<form action="delete/@model.produtoid" method="post">
-																<div class="input">
-																		<label for="id">D</label>
-																		<input type="text" id="id" name="id">
-																</div>
-																<button type="submit">DELETE</button>
-														</form>
-													</section>
+													</form>												
 												</div>
 	                </div>
 	            </div>
