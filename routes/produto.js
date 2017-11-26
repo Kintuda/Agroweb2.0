@@ -99,5 +99,9 @@ router.post('/delete', async function (req, res, next) {
 
   return res.json({excluiu: true})
 })
+router.get('/logout', function(req, res, next) {
+  req.logout()
+  res.redirect('/')
+})
 
 module.exports = router;
