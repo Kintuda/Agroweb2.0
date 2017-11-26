@@ -20,7 +20,9 @@ router.get('/', async function(req, res, next) {
     res.render('users/perfil',{nome:(req.user ?req.user.nome_completo : ''),
     user:result.rowCount > 0 ? result.rows : null,
     nome_completo:(req.user ?req.user.nome_completo : ''),
-    produto:produto.rowCount > 0 ? produto.rows : null})
+    produto:produto.rowCount > 0 ? produto.rows : null,
+    admin:admin
+  })
   }else{
     var produto = await db.query('SELECT * FROM produto where cadastro=$1',[req.user.id])
     res.render('users/perfil',{nome:(req.user ?req.user.nome_completo : ''),

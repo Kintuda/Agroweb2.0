@@ -19,6 +19,13 @@
             <i class="material-icons">shopping_basket</i> Produtos
           </a>
         </li>
+        @if(model.isadmin){
+        <li>
+          <a href="/dashboard" target="">
+          <i class="material-icons">face</i>Dashboard
+        </a>
+        </li>
+        }
         @if(!model.nome){
         <li>
           <a href="/users/login" target="">

@@ -47,6 +47,10 @@
 													<td><a href='/perfil/perfildelete/@item.id'>
 														<i class="material-icons">delete</i>
 													</a></td>}
+													@if(item.isadmin){
+													<td><a href='/dashboard'>
+														<i class="material-icons">dashboard</i>
+													</a></td>}
 												</tr>
 												})
 
