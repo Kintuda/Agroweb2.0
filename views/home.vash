@@ -82,10 +82,9 @@
 									<h4 class="title">Thiago <br/>
 										<small class="text-muted">Fundador/DBA</small>
 									</h4>
-									<p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+									<p class="description">Thiago é um dos fundadores e também é responsável pela funcionabilidade e manutenção de qualquer atividade relacionada ao banco de dados</p>
 									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
-									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-instagram"></i></a>
-									<a href="https://www.facebook.com/" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
+									<a href="https://br.linkedin.com" class="btn btn-simple btn-just-icon"><i class="fa fa-linkedin"></i></a>
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -94,9 +93,9 @@
 									<h4 class="title">Marcio <br/>
 														<small class="text-muted">Fundador/Desenvolvedor</small>
 													</h4>
-									<p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+									<p class="description">Márcio é um dos fundadores e também um dos três desenvolvedores responsável pelo desenvolvimento Front-end da plataforma Agroweb</p>
 									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
-									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-instagram"></i></a>
+									<a href="https://br.linkedin.com" class="btn btn-simple btn-just-icon"><i class="fa fa-linkedin"></i></a>
 									<a href="https://www.facebook.com/" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
 								</div>
 							</div>
@@ -106,9 +105,8 @@
 									<h4 class="title">Ricardo <br/>
 														<small class="text-muted">Fundador/DBA</small>
 													</h4>
-									<p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
-									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
-									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-instagram"></i></a>
+									<p class="description">Ricardo é um dos fundadores e responsável pela pesquisa de novas tecnologias implementação de novas tecnologias na plataforma Agroweb.</p>
+									<a href="https://br.linkedin.com" class="btn btn-simple btn-just-icon"><i class="fa fa-linkedin"></i></a>
 									<a href="https://www.facebook.com/" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
 								</div>
 							</div>
@@ -118,7 +116,7 @@
 									<h4 class="title">Hugo<br/>
 										<small class="text-muted">Desenvolvedor</small>
 									</h4>
-									<p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+									<p class="description">Hugo é responsável pelo desenvolvimento tanto Front-end quanto Backend da plataforma Agroweb e manutenção de qualquer atividade relacionada ao desenvolvimento</p>
 									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
 									<a href="https://br.linkedin.com/" class="btn btn-simple btn-just-icon"><i class="fa fa-linkedin"></i></a>
 								</div>
@@ -129,9 +127,9 @@
 									<h4 class="title">Kin<br/>
 										<small class="text-muted">Desenvolvedor</small>
 									</h4>
-									<p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
-									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-google-plus"></i></a>
-									<a href="https://br.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+									<p class="description">Kin é responsável pelo desenvolvimento do Backend do site e monitoramento das funções diárias da plataforma Agroweb</p>
+									<a href="https://github.com/Kintuda" class="btn btn-simple btn-just-icon"><i class="fa fa-github"></i></a>
+									<a href="https://br.linkedin.com" class="btn btn-simple btn-just-icon"><i class="fa fa-linkedin"></i></a>
 								</div>
 							</div>
 						</div>
