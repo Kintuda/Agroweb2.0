@@ -20,18 +20,7 @@
                           <p>Modificar dados</p>
                       </a>
                   </li>
-                  <li>
-                    <a href="#produto">
-                      <i class="material-icons">shopping_cart</i>
-                      <p>Produtos</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#user">
-                      <i class="material-icons">face</i>
-                      <p>Usuários</p>
-                    </a>
-                  </li>
+
                   <li>
                     <a href="/">
                       <i class="material-icons">home</i>
@@ -51,11 +40,10 @@
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="card">
                                 <div class="card-header" data-background-color="green">
                                     <h4 class="title">Produtos cadastrados</h4>
-                                    <p class="category">Here is a subtitle for this table</p>
                                 </div>
                                 <div class="card-content table-responsive">
                                   <table id="produto" class="table">
@@ -91,11 +79,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="card card-plain">
                                 <div class="card-header" data-background-color="green">
-                                    <h4 class="title">usuários</h4>
-                                    <p class="category">Here is a subtitle for this table</p>
+                                    <h4 class="title">Usuários Cadastrados</h4>
                                 </div>
                                 <div class="card-content table-responsive">
                                   <table class="table">

@@ -28,7 +28,7 @@
 						<div class="col-md-8 col-md-offset-2">
 							<h2 class="title">informações em destaque</h2>
 
-							<h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.</h5>
+							<h5 class="description"></h5>
 						</div>
 					</div>
 
@@ -51,10 +51,6 @@
 										<i class="material-icons">insert_chart</i>
 									</div>
 									<h4 class="info-title">Notícia em destaque</h4>
-									<!-- Widgets NotÃ­cias AgrÃ­colas - www.noticiasagricolas.com.br/widgets -->
-									<!-- Widgets NotÃ­cias AgrÃ­colas - www.noticiasagricolas.com.br/widgets -->
-									<!-- Widgets NotÃ­cias AgrÃ­colas - www.noticiasagricolas.com.br/widgets -->
-									<!-- Widgets NotÃ­cias AgrÃ­colas - www.noticiasagricolas.com.br/widgets -->
 									<script type="text/javascript" src="https://www.noticiasagricolas.com.br/widget/noticias.js.php?subsecao=2,3,6,7,8,10,64,80,85,146,5,4,11,12,156,40,60,13,97,14,95,15,1,155,84,28,149,26,69,90,62,27,92,148,154&largura=auto&altura=auto&fonte=Arial%2C%20Helvetica%2C%20sans-serif&tamanho=10pt&cortexto=333333&corlink=006666&qtd=7&output=js"></script>
 								</div>
 							</div>
@@ -82,10 +78,10 @@
 									<h4 class="title">Thiago <br/>
 										<small class="text-muted">Fundador/DBA</small>
 									</h4>
-									<p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+									<p class="description">Thiago é um dos fundadores e também é responsável pela funcionabilidade e manutenção de qualquer atividade relacionada ao banco de dados</p>
 									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
 									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-instagram"></i></a>
-									<a href="https://www.facebook.com/" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
+									<a href="https://br.linkedin.com/" class="btn btn-simple btn-just-icon"><i class="fa fa-linkedin"></i></a>
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -94,10 +90,9 @@
 									<h4 class="title">Marcio <br/>
 														<small class="text-muted">Fundador/Desenvolvedor</small>
 													</h4>
-									<p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+									<p class="description">Márcio é um dos fundadores e também um dos três desenvolvedores responsável pelo desenvolvimento Front-end da plataforma Agroweb</p>
 									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
-									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-instagram"></i></a>
-									<a href="https://www.facebook.com/" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
+									<a href="https://br.linkedin.com/" class="btn btn-simple btn-just-icon"><i class="fa fa-linkedin"></i></a>
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -106,9 +101,9 @@
 									<h4 class="title">Ricardo <br/>
 														<small class="text-muted">Fundador/DBA</small>
 													</h4>
-									<p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
+									<p class="description">icardo é um dos fundadores e responsável pela pesquisa de novas tecnologias implementação de novas tecnologias na plataforma Agroweb</p>
 									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
-									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-instagram"></i></a>
+									<a href="https://br.linkedin.com/" class="btn btn-simple btn-just-icon"><i class="fa fa-linkedin"></i></a>
 									<a href="https://www.facebook.com/" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-facebook-square"></i></a>
 								</div>
 							</div>
@@ -118,8 +113,8 @@
 									<h4 class="title">Hugo<br/>
 										<small class="text-muted">Desenvolvedor</small>
 									</h4>
-									<p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
-									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-twitter"></i></a>
+									<p class="description">Hugo é responsável pelo desenvolvimento tanto Front-end quanto Backend da plataforma Agroweb e manutenção de qualquer atividade relacionada ao desenvolvimento</p>
+									<a href="https://github.com/" class="btn btn-simple btn-just-icon"><i class="fa fa-github"></i></a>
 									<a href="https://br.linkedin.com/" class="btn btn-simple btn-just-icon"><i class="fa fa-linkedin"></i></a>
 								</div>
 							</div>
@@ -129,8 +124,8 @@
 									<h4 class="title">Kin<br/>
 										<small class="text-muted">Desenvolvedor</small>
 									</h4>
-									<p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
-									<a href="#pablo" class="btn btn-simple btn-just-icon"><i class="fa fa-google-plus"></i></a>
+									<p class="description">Kin é responsável pelo desenvolvimento do Backend do site e monitoramento das funções diárias da plataforma Agroweb</p>
+									<a href="https://github.com/Kintuda/" class="btn btn-simple btn-just-icon"><i class="fa fa-github"></i></a>
 									<a href="https://br.linkedin.com/"><i class="fa fa-linkedin"></i></a>
 								</div>
 							</div>
