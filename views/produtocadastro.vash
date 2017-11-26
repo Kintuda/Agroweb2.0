@@ -32,25 +32,25 @@
 										<span class="input-group-addon">
 											<i class="material-icons">email</i>
 										</span>
-										<input type="text" id="nome" name="nome" class="form-control" placeholder="Nome do produto" autofocus>
+										<input type="text" id="nome" name="nome" class="form-control" placeholder="Nome do produto" autofocus required>
 									</div>
 									<div class="input-group">
 										<span class="input-group-addon">
 											<i class="material-icons">monetization_on</i>
 										</span>
-										<input type="text" id="preco" name="preco" placeholder="Preço do produto R$" class="form-control" />
+										<input type="text" id="preco" name="preco" placeholder="Preço do produto R$" class="form-control" required/>
 									</div>
                   <div class="input-group">
 										<span class="input-group-addon">
 											<i class="material-icons">storage</i>
 										</span>
-										<input type="text" id="qt" name="qt" placeholder="Quantidade do produto" class="form-control" />
+										<input type="text" id="qt" name="qt" placeholder="Quantidade do produto" class="form-control" required />
 									</div>
 									<div class="input-group">
 										<span class="input-group-addon">
 											<i class="material-icons">label_outline</i>
 										</span>
-										<input type="text" id="unidade" name="unidade" placeholder="Unidade do produto" class="form-control" />
+										<input type="text" id="unidade" name="unidade" placeholder="Unidade do produto" class="form-control" required />
 									</div>
 									<div class="input-group">
 										<span class="input-group-addon">
@@ -66,19 +66,19 @@
 										<span class="input-group-addon">
 											<i class="material-icons">business</i>
 										</span>
-										<input type="text" id="empresa" name="empresa" placeholder="Nome da empresa" class="form-control" />
+										<input type="text" id="empresa" name="empresa" placeholder="Nome da empresa" class="form-control" required />
 									</div>
 									<div class="input-group">
 										<span class="input-group-addon">
 											<i class="material-icons">add_location</i>
 										</span>
-										<input type="text" id="local" name="local" placeholder="Localização" class="form-control" />
+										<input type="text" id="local" name="local" placeholder="Localização" class="form-control" required />
 									</div>
 									<div class="input-group">
 										<span class="input-group-addon">
 											<i class="material-icons">lock_outline</i>
 										</span>
-										<input type="text" id="url" name="url" placeholder="URL ou informações de contato" class="form-control" />
+										<input type="text" id="url" name="url" placeholder="URL ou informações de contato" class="form-control" required />
 									</div>
 									<!-- If you want to add a checkbox to this form, uncomment this code
 

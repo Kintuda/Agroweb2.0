@@ -70,7 +70,7 @@ router.post('/cadastro', async (req, res, next) => {
   var params = []
   var sql = ''
   sql = `
-  INSERT INTO produto (produtonome, produtopreco, produtoqt,categoriaid,empresa,local,url,cadastro,unidade) VALUES ($1, $2, $3, $4,$5,$6,$7,$8,$9)
+  INSERT INTO produto (produtonome, produtopreco, produtoqt,categoriaid,empresa,local,url,cadastro,unidade,produtodata) VALUES ($1, $2, $3, $4,$5,$6,$7,$8,$9,CURRENT_DATE)
   `
   params = [produto.nome, produto.preco, produto.qt, produto.categoria,produto.empresa,produto.local,produto.url,req.user.id,produto.unidade]
 
@@ -81,7 +81,6 @@ router.post('/cadastro', async (req, res, next) => {
   }
 
   return res.render('../views/produtocadastro', {
-    title: 'Cadastro de Pessoa',
     nome: 'Ocorreu algum erro',
     produto:produto
   })

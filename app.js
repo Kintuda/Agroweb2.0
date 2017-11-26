@@ -45,12 +45,13 @@ var users = require('./routes/users');
 const produto = require('./routes/produto')
 const perfil = require('./routes/perfil')
 const about = require('./routes/about')
+const dash = require('./routes/dashboard')
 app.use('/', index)
 app.use('/users', users)
 app.use('/produto', produto)
 app.use('/perfil',perfil)
 app.use('/about',about)
-
+app.use('/dashboard',dash)
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   var err = new Error('Not Found')

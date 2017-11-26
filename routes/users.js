@@ -38,7 +38,7 @@ router.post('/login', function(req, res, next) {
   try {
     passport.authenticate('local', function(err, user, info) {
       if (err) {
-        res.render('users/login', {
+        res.render('../views/users/login', {
           title: 'Acesso ao Sistema',
           error: err,
           user: req.body
@@ -46,7 +46,7 @@ router.post('/login', function(req, res, next) {
       }
 
       if (!user) {
-        res.render('users/login', {
+        res.render('../views/users/login', {
           title: 'Acesso ao Sistema',
           error: 'Erro desconhecido!',
           user: req.body
@@ -56,7 +56,7 @@ router.post('/login', function(req, res, next) {
       // req / res held in closure
       req.logIn(user, function(err) {
         if (err) {
-          res.render('users/login', {
+          res.render('../views/users/login', {
             title: 'Acesso ao Sistema',
             error: err,
             user: req.body

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    @html.include('/dashboard/header')
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar" data-color="green" data-image="/dash/img/sidebar-1.jpg">
+          <div class="sidebar-wrapper">
+              <ul class="nav" role="tablist">
+                  <li>
+                      <a href="/dashboard">
+                          <i class="material-icons">dashboard</i>
+                          <p>Dashboard</p>
+                      </a>
+                  </li>
+                  <li  class="active">
+                      <a href="/dashboard/tables">
+                          <i class="material-icons">content_paste</i>
+                          <p>Modificar dados</p>
+                      </a>
+                  </li>
+                  <li>
+                    <a href="#produto">
+                      <i class="material-icons">shopping_cart</i>
+                      <p>Produtos</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#user">
+                      <i class="material-icons">face</i>
+                      <p>Usuários</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <i class="material-icons">home</i>
+                      <p>Tela de início</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="users/logout">
+                      <i class="material-icons">lock_outline</i>
+                      <p>Logout</p>
+                    </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+        <div class="main-panel">
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header" data-background-color="green">
+                                    <h4 class="title">Produtos cadastrados</h4>
+                                    <p class="category">Here is a subtitle for this table</p>
+                                </div>
+                                <div class="card-content table-responsive">
+                                  <table id="produto" class="table">
+              											<thead>
+              													<tr>
+              															<th class="text-center">ID</th>
+              															<th>Produto </th>
+              															<th>Quantidade</th>
+              															<th>Preço</th>
+              															<th>Empresa</th>
+              															<th></th>
+              															<th></th>
+              													</tr>
+              											</thead>
+              											<tbody>
+              												@model.produto.forEach(function(item){
+              												<tr>
+              													<td>@item.produtoid</td>
+              													<td>@item.produtonome</td>
+              													<td>@item.produtoqt</td>
+              													<td>R$@item.produtopreco</td>
+              													<td>@item.empresa</td>
+              													<td><a href='/perfil/updateproduto/@item.produtoid'>
+              														<i class="material-icons">create</i>
+              													</a></td>
+              													<td><a href='/perfil/delete/@item.produtoid'>
+              														<i class="material-icons">delete</i>
+              													</a></td>
+              												</tr>
+              												})
+              											</tbody>
+              										</table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-plain">
+                                <div class="card-header" data-background-color="green">
+                                    <h4 class="title">usuários</h4>
+                                    <p class="category">Here is a subtitle for this table</p>
+                                </div>
+                                <div class="card-content table-responsive">
+                                  <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">ID</th>
+                                            <th>Nome </th>
+                                            <th>Email</th>
+                                            <th>Telefone</th>
+                                            <th>CPF</th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                      @model.user.forEach(function(item){
+                                      <tr>
+                                        <td>@item.id</td>
+                                        <td>@item.nome_completo</td>
+                                        <td>@item.email</td>
+                                        <td>@item.fone</td>
+                                        <td>@item.cpf</td>
+                                        <td><a href='/perfil/update'>
+                                          <i class="material-icons">create</i>
+                                        </a></td>
+                                        @if(!item.isadmin){
+                                        <td><a href='/perfil/perfildelete/@item.id'>
+                                          <i class="material-icons">delete</i>
+                                        </a></td>}
+                                      </tr>
+                                      })
+                                    </tbody>
+                                  </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  </body>
+} );
+</html>
