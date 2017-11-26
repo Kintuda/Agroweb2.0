@@ -208,19 +208,15 @@
                                     <table class="table table-hover">
                                         <thead>
                                             <th>ID</th>
-                                            <th>Nome</th>
-                                            <th>Comentário</th>
                                             <th>Email</th>
-
+                                            <th>Comentário</th>
                                         </thead>
                                         <tbody>
                                             @model.rec.forEach(function(item){
                                               <tr>
                                               <td>@item.id</td>
-                                              <td>@item.nome</td>
+                                              <td>@item.email</td>
                                               <td>@item.mensagem</td>
-                                              <td><td><button type="button" class="btn btn-primary btn-sm" data-toggle="popover" data-placement="top" title="Contato" data-content="@item.email"><i class="material-icons">announcement</i></button>
-                                                </td></td>
                                               </tr>
                                             })
                                         </tbody>
