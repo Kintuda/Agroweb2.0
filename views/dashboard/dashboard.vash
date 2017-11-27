@@ -126,53 +126,7 @@
                                             </tbody>
                                           </table>
                                         </div>
-                                        <div class="tab-pane" id="messages">
-                                          <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-center">ID</th>
-                                                    <th>Nome </th>
-                                                    <th>Email</th>
-                                                    <th>Data</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                              @model.user.forEach(function(item){
-                                              <tr>
-                                                <td>@item.id</td>
-                                                <td>@item.nome_completo</td>
-                                                <td>@item.email</td>
-                                                <td>@item.data_cadastro</td>
-                                              </tr>
-                                              })
-
-                                            </tbody>
-                                          </table>
-                                        </div>
                                         <div class="tab-pane" id="bug">
-                                          <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-center">ID</th>
-                                                    <th>Nome </th>
-                                                    <th>Email</th>
-                                                    <th>Mensagem</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                              @model.user.forEach(function(item){
-                                              <tr>
-                                                <td>@item.id</td>
-                                                <td>@item.nome_completo</td>
-                                                <td>@item.email</td>
-                                                <td>@item.data_cadastro</td>
-                                              </tr>
-                                              })
-
-                                            </tbody>
-                                          </table>
-                                        </div>
-                                        <div class="tab-pane" id="messages">
                                           <table class="table">
                                             <thead>
                                                 <tr>

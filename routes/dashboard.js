@@ -13,8 +13,9 @@ router.get('/', async function(req, res, next) {
   if(admin.rows[0].isadmin){
     var contador =  await db.query('SELECT COUNT(produtoid) FROM produto where produtoid>0')
     var count = await db.query('SELECT count(id) FROM usuarios where id>0')
-    var result = await db.query('SELECT produtoid,produtonome,produtodata from produto ORDER BY produtodata DESC LIMIT 5')
-    var user = await db.query('SELECT id,nome_completo,email,data_cadastro FROM usuarios ORDER BY data_cadastro  DESC LIMIT 5')
+    var result = await db.query('SELECT produtoid,produtonome,produtodata from produto ORDER BY produtoid DESC LIMIT 5')
+    console.log(result.rows)
+    var user = await db.query('SELECT id,nome_completo,email,data_cadastro FROM usuarios ORDER BY id DESC LIMIT 5')
     var reclamacao = await db.query('SELECT * from comentarios')
     var contadorrec = await db.query('SELECT count(id) FROM comentarios where id>0 LIMIT 5')
     res.render('../views/dashboard/dashboard',{nome:(req.user ?req.user.nome_completo : ''),
@@ -32,7 +33,7 @@ router.get('/', async function(req, res, next) {
 router.get('/tables', async function(req, res, next) {
   var admin = await db.query('SELECT isadmin from usuarios where id =$1',[req.user.id])
   var produto =  await db.query('SELECT * FROM produto ORDER BY produtoid')
-  var user = await db.query('SELECT * FROM usuarios')
+  var user = await db.query('SELECT * FROM usuarios ORDER BY id')
   if(admin.rows[0].isadmin){
     res.render('../views/dashboard/table',{nome:(req.user ?req.user.nome_completo : ''),
     produto:produto.rows,
