@@ -1,0 +1,45 @@
+@html.extend('layout', function(model) {
+  @html.block('content', function(model) {
+    <div class="credenciais">
+      <form method="POST" action="/">
+        <label for="cnpjsoftwarehouse">CNPJ softwarehouse</label>
+          <input type="text" name="cnpjsoftwarehouse" value="01001001000113">
+        <label for="softwarehousetoken">Softwarehousetoken</label>
+          <input type="text" name="softwarehousetoken" value="f22b97c0c9a3d41ac0a3875aba69e5aa">
+        <label for="cnpjcedente">CNPJ cedente</label>
+          <input type="text" value="11361429917" name="cnpjcedente">
+        <label for="credenciais"></label>
+          <input type="submit" value="Autenticar">
+      </form>
+    </div>
+    <div class="consultar" style="padding-top:10px">
+      <form method="POST" action="boleto">
+      <label for="idIntegracao">IdIntegração</label>
+        <input type="text" name="idIntegracao">
+      <input type="submit" value="Consultar">
+      </form>
+      <!--<form method="POST" action="consulta/email">
+        <label for="protEmail">Protocolo Email</label>
+        <input type="text" name="protEmail" id="emailSimples">
+        <input type="submit" name="consultarEmail" value="Consultar email">
+      </form>
+      <form method="POST" action="consulta/impressao">
+        <label for="protImpressao">Protocolo Impressao</label>
+        <input type="text" name="protEmail" id="impressao">
+        <input type="submit" name="consultarImpressao" value="Consultar impressao">
+      </form>-->
+    </div>
+    <div class="entrada">
+      <textarea rows="15" cols="70" style="margin-top:25px;margin-left:10px">@model.dados</textarea>
+      <form method="POST" action='/'>
+        <textarea name="entradatexto" id="gerar" rows="15" cols="70" style="margin-top:25px;margin-left:20px"></textarea>
+        <input type="submit" id="1" name="1" value="Enviar">
+        <input type="submit" id="2" name="2" value="E-mail">
+      </form>
+      <button   id="gerarjson" type="button">Gerar  JSON boleto</button>
+      <button   id="enviar"    type="button">Gerar Email</button>
+      <button   id="impressao" type="button">Gerar impressao</button>
+    </div>
+    <script src="javascripts/function.js"></script>
+  })
+})
