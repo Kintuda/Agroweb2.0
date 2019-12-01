@@ -8,7 +8,7 @@
     "alwaysStrict": true
   },
   "exclude": [
-    "node_modules"
+    "src/node_modules"
   ],
   "include": [
     "src"
